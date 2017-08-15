@@ -1,0 +1,40 @@
+var app = getApp();
+Page({
+	data:{
+		num:app.num,
+		o:{name:'张三',age:19},
+		arr:['aaa','bbb']
+	},
+	onLoad:function(){
+		console.log('页面加载')
+	},
+	onReady:function(){
+		console.log('页面渲染完成')
+	},
+	onShow:function(){
+		console.log('页面显示')
+	},
+	onHide:function(){
+		console.log('页面隐藏')
+	},
+	onUnload:function(){
+		console.log('页面卸载')
+	},
+	onPullDownRefresh:function(){
+		// 
+		console.log('刷新开始')
+		wx.stopPullDownRefresh()
+	},
+	onReachBottom:function(){
+		console.log('加载新内容')
+	},
+	showTab:function(){
+		this.setData({num:'abc'})
+		console.log(this.data.num)
+	},
+	goTo:function(){
+		wx.navigateTo({
+			url:'../fujin/fujin'
+		})
+	}
+})

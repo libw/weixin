@@ -1,0 +1,5 @@
+<view bindtap="showTab">{{num}}</view>
+<view>姓名：{{o.name}}</view>
+<view>年龄：{{o.age}}</view>
+<view bindtap="goTo">跳转到附近</view>
+<navigator url="../fujin/fujin" redirect="true">跳转附近</navigator>

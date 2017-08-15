@@ -1,0 +1,277 @@
+/**index.wxss**/
+
+body{
+  width:100%;
+  background:#F0F0F0;
+  overflow-x:hidden;
+}
+
+/************  主体部分  *************/
+view{
+  font-family:microsoft yahei,Arial,Helvetica, sans-serif;
+}
+.container{
+  padding:0;
+  background:#F0F0F0;
+}
+.main-container{
+  width:100%;
+  height:800rpx;
+  position:relative;
+}
+.main-container swiper{
+  width:100%;
+  height:100%;
+}
+.main-container swiper-item{
+  width:100%;
+  height:100%;
+}
+.main-section{
+  width:500rpx;
+  height:400rpx;
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin:auto;
+  z-index:10;
+  text-align: center;
+  color:#fff;
+}
+.main-section .location{
+  font-size:50rpx;
+}
+.main-section .weather{
+  font-size:30rpx;
+  margin-top:16rpx;
+}
+.main-section .temp{
+  font-size:150rpx;
+}
+
+.main-section .num,.main-section .value{
+  display:inline-block;
+  margin:0 6rpx;
+}
+
+/*图片*/
+.main image{
+  width:100%;
+  height:100%;
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:0;
+}
+
+
+
+
+/************  每天天气  *************/
+.day-container{
+  box-sizing: border-box;
+  width:100%;
+  padding: 40rpx 30rpx;
+  background:#FAFAFA;
+  display:flex;
+  justify-content:space-around;
+  overflow:hidden;
+}
+.day-container .day{
+  overflow:hidden;
+  text-align: center;
+}
+.day-container .date{
+  font-size:30rpx;
+  color:#666;
+}
+.day-container .icon{
+  font-size:34rpx;
+  color:#666;
+  margin:20rpx 0;
+}
+.day-container .icon image{
+  width:100rpx;
+  height:100rpx;
+}
+.day-container .degree{
+  font-size:24rpx;
+  color:#333;
+}
+
+/************  空气质量  *************/
+.airvalue-container{
+  box-sizing: border-box;
+  width:100%;
+  height:auto;
+  padding: 40rpx;
+  background:#FAFAFA;
+  margin-top:20rpx;
+}
+
+/*********** 左部分 **********/
+.airvalue-left{
+  float:left;
+  width:30%;
+  height:20rpx;
+  font-size: 34rpx;
+  color:#598FEC;
+}
+.airvalue-left .value{
+  margin:10rpx 0;
+}
+.airvalue-left .num{
+  font-size:90rpx;
+}
+
+/*********** 右部分 **********/
+.airvalue-right{
+  float:left;
+  width:70%;
+}
+.airvalue-right .progress-container{
+  margin-bottom:30rpx;
+}
+.progress-container .pm{
+  float:left;
+  font-size:26rpx;
+}
+.progress-container .per{
+  float:right;
+  font-size:26rpx;
+}
+.progress-container progress{
+  width:100%;
+  padding-top:10rpx;
+}
+
+/** 描述 **/
+.airvalue-right .describe{
+  font-size:34rpx;
+}
+.airvalue-right .describe text{
+  color:#3A99FF;
+  font-size:36rpx;
+}
+
+
+/***************** 其他  *******************/
+.other-container{
+  box-sizing: border-box;
+  width:100%;
+  height:auto;
+  padding: 40rpx;
+  background:#FAFAFA;
+  margin-top:20rpx;
+  font-size: 32rpx;
+  position:relative;
+}
+/*.other-container:before{
+  content:"";
+  display:block;
+  width:1px;
+  height:100%;
+  background:#E8E8EA;
+  position:absolute;
+  left:50%;
+  top:0;
+}
+.other-container:after{
+  content:"";
+  display:block;
+  height:1px;
+  width:100%;
+  background:#E8E8EA;
+  position:absolute;
+  top:50%;
+  left:0;
+}*/
+.other-container .items{
+  box-sizing: border-box;
+  float:left;
+  width:50%;
+  padding:40rpx;
+}
+.other-container .items .pic{
+  display:block;
+  width:150rpx;
+  height:150rpx;
+  /*background:#3A99FF;*/
+  margin:0 auto;
+  margin-bottom:20rpx;
+  border-radius: 50%;
+}
+.items .left{
+  float:left;
+  text-align:left;
+}
+.items .right{
+  float:right;
+  text-align:right;
+}
+.items .middle{
+  text-align: center;
+}
+.items .items-title-sub{
+  color:#9E9E9E;
+  margin-bottom:10rpx;
+}
+
+/*边框*/
+.wind-items{
+  border-right: 1px solid #E8E8EA;
+  border-bottom: 1px solid #E8E8EA;
+}
+.hum-items{
+  border-right: 1px solid #E8E8EA;
+}
+.sun-items{
+  border-bottom: 1px solid #E8E8EA;
+}
+
+
+/*****************  服务  *******************/
+.serve-container{
+  box-sizing: border-box;
+  width:100%;
+  height:auto;
+  padding:40rpx;
+  background:#FAFAFA;
+  margin-top:20rpx;
+  font-size: 32rpx;
+  display:flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+  overflow:hidden;
+}
+.serve-container .items{
+  box-sizing:border-box;
+  width:33.33%;
+  height:auto;
+  margin-bottom:30rpx;
+  overflow:hidden;
+}
+.serve-container .items .pic{
+  width:100%;
+  height:200rpx;
+  overflow:hidden;
+}
+.serve-container .items .pic img{
+  width:100%;
+}
+.serve-container .items text{
+  display: block;
+  width:100%;
+  text-align: center;
+}
+.serve-container .items .sub{
+  margin:20rpx 0 10rpx 0;
+  color:#7C7C7C;
+}
+.serve-container .items .eval{
+  color:#3A3A3A;
+}
+

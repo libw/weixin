@@ -1,0 +1,5 @@
+<template name="person">
+	<view>
+		{{name}},他已经{{age}}了
+	</view>
+</template>

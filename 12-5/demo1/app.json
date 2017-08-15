@@ -1,0 +1,41 @@
+{
+	"pages":[
+		"pages/fujin/fujin",
+		"pages/index/index"
+		
+	],
+	"window":{
+		"navigationBarBackgroundColor":"#4C8BF5",
+		"navigationBarTitleText":"一个小程序",
+		"navigationBarTextStyle":"#fff",
+		"backgroundColor":"#eee",
+		"backgroundTextStyle":"dark",
+		"enablePullDownRefresh":"true"
+	},
+	"tabBar":{
+		"color":"#fff",
+		"selectedColor":"#1296DB",
+		"backgroundColor":"#333",
+		"list":[
+			{
+				"pagePath":"pages/index/index",
+				"text":"首页",
+				"iconPath":"images/home.png",
+				"selectedIconPath":"images/home_hot.png"
+			},
+			{
+				"pagePath":"pages/fujin/fujin",
+				"text":"附近",
+				"iconPath":"images/fujin.png",
+				"selectedIconPath":"images/fujin_hot.png"
+			},
+			{
+				"pagePath":"pages/index/index",
+				"text":"我的",
+				"iconPath":"images/me.png",
+				"selectedIconPath":"images/me_hot.png"
+			}
+		]
+	},
+	"debug":false
+}

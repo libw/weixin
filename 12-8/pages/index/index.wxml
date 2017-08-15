@@ -1,0 +1,15 @@
+<!-- #menu btn -->
+<view class="menu-btn" bindtouchstart="start" bindtouchmove="move" style="left:{{x}}px;top:{{y}}px" bindtap="showSlide">
+	<image class="" src="../../images/menu.png"/>
+</view>
+
+<!-- #slide -->
+<scroll-view scroll-y="true" class="slide {{show?'hot':''}}">
+
+</scroll-view>
+<view class="mask" style="display:{{show?'block':'none'}}" bindtap="showMask"></view>
+
+<!-- #content -->
+<scroll-view scroll-y="true" class="content">
+
+</scroll-view>

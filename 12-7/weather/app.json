@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/flash/flash",
+    "pages/index/index",
+    "pages/list/list"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#132B4D",
+    "navigationBarTitleText": "今日天气",
+    "navigationBarTextStyle":"#fff"
+  }
+}

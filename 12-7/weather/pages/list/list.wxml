@@ -1,0 +1,10 @@
+<view class="list-box">
+	<view>
+		<input type="text" style="border:1px solid red" value="{{inputCity}}" bindblur="changeCity"/>
+		<button size="mini" bindtap="addHot">添加</button>
+	</view>
+	<view class="list">
+		<button wx:for="{{hotcity}}" wx:key="{{index}}" size="mini" bindtap="selectCity" id="{{item}}">{{item}}</button>
+
+	</view>
+</view>

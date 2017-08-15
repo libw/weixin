@@ -1,0 +1,44 @@
+<map style="height:800rpx" covers="{{covers}}" markers="{{markers}}"></map>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<scroll-view class="box" scroll-y="true" upper-threshold="50"  lower-threshold="50" bindscrolltoupper="toTop" bindscrolltolower="toBottom" bindscroll="scrolls" scroll-top="50">
+	<view class="content"></view>
+</scroll-view>
+
+<swiper indicator-dots="true" autoplay="true" current="3" interval="400" duration="100">
+<block wx:for="{{imgList}}" wx:key="{{index}}">
+	<swiper-item >
+		<image src="{{item}}" />
+	</swiper-item>
+</block>
+</swiper>
+
+<icon type="success" size="100" color="blue"></icon>
+
+<progress percent="22.555" show-info="true" style="width:500rpx" stroke-width="20" color="pink" active="true"/>
+
+<navigator url="../logs/logs" hover-class="hot">百度一下</navigator>
+
+<div style="display:block;width:300px;height:300px;background:red">div</div>
+
+<audio controls poster="../../images/1.jpg" name="333333" author="唐伯虎" src="http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E06DCBDC9AB7C49FD713D632D313AC4858BACB8DDD29067D3C601481D36E62053BF8DFEAF74C0A5CCFADD6471160CAF3E6A&fromtag=46"></audio>
+
+<image src="../../images/1.jpg" style="width:300rpx;height:300rpx;" mode="aspectFill"/>
+
+<image src="../../images/1.jpg" style="width:300rpx;height:300rpx;" mode="bottom right"/>
+
+
+<video src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" danmu-list="{{danmuList}}" danmu-btn="true" enable-danmu="true"></video>

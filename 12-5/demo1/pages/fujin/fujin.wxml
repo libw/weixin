@@ -1,0 +1,12 @@
+<view wx:for="{{names}}" wx:key="{{index}}">{{index+1}}:{{item}}</view>
+
+
+<view wx:for="{{names}}" wx:for-item="val" wx:for-index="i" wx:key="{{i}}">{{i+1}}:{{val}}</view>
+
+
+<view bindtap="show">是否显示</view>
+
+	<view  hidden="{{flag}}" style="width:30px;height:30px;background-color:green;"></view>
+	<view  hidden="{{flag}}" style="width:30px;height:30px;background-color:red;"></view>
+<import src="../tpls/item.wxml"/>
+<template wx:for="{{users}}" wx:key="{{index}}" is="person" data="{{...item}}"/>

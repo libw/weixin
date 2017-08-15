@@ -1,0 +1,40 @@
+var app = getApp();
+Page({
+	data:{
+		names:['张三','李四','王武','赵柳'],
+		flag:true,
+		users:[
+			{name:'张三',age:19},
+			{name:'李四',age:18},
+			{name:'王武',age:17},
+			{name:'赵柳',age:16}
+		],
+	},
+	onLoad:function(){
+		console.log('页面加载')
+	},
+	onReady:function(){
+		console.log('页面渲染完成')
+	},
+	onShow:function(){
+		console.log('页面显示')
+	},
+	onHide:function(){
+		console.log('页面隐藏')
+	},
+	onUnload:function(){
+		console.log('页面卸载')
+	},
+	onPullDownRefresh:function(){
+		// 
+		console.log('刷新开始')
+		wx.stopPullDownRefresh()
+	},
+	onReachBottom:function(){
+		console.log('加载新内容')
+	},
+	show:function(){
+		var f = this.data.flag?false:true;
+		this.setData({flag:f})
+	}
+})
